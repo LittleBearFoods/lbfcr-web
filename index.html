@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="es-CR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Little Bear Foods · Comida y amor de verdad</title>
+<meta name="description" content="Little Bear Foods: alimentos para bebés hechos por padres en Costa Rica, con ingredientes reales y amor de verdad.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  /* Tokens del libro de marca LBF. Tipografías: sustitutas web de Howli y Basic Sans (licencias pendientes). */
+  :root {
+    --rojo: #FF0001;
+    --naranja: #F08E00;
+    --salmon: #E99179;
+    --verde: #00AC4C;
+    --cafe: #673D20;
+    --crema: #F5FFAF;
+    --durazno: #FDC667;
+    --blanco: #FFFFFF;
+    --titular: "Baloo 2", system-ui, sans-serif;
+    --texto: "Nunito Sans", system-ui, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: var(--blanco); color: var(--cafe); font: 400 17px/1.6 var(--texto); }
+  img { max-width: 100%; height: auto; display: block; }
+  a { color: inherit; }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 20px; }
+
+  header { position: sticky; top: 0; z-index: 10; background: rgba(255,255,255,.95); backdrop-filter: blur(6px); border-bottom: 1px solid #f1e6dc; }
+  header .wrap { display: flex; align-items: center; justify-content: space-between; height: 68px; }
+  header img { height: 44px; width: auto; }
+  nav a { margin-left: 22px; text-decoration: none; font-weight: 700; font-size: 15px; }
+  nav a:hover { color: var(--rojo); }
+
+  .hero { background: var(--crema); overflow: hidden; }
+  .hero .wrap { display: grid; grid-template-columns: 1.1fr .9fr; gap: 32px; align-items: center; padding-top: 56px; padding-bottom: 56px; }
+  h1, h2, h3 { font-family: var(--titular); font-weight: 800; line-height: 1.1; margin: 0 0 16px; }
+  h1 { color: var(--rojo); font-size: clamp(38px, 6vw, 64px); }
+  h2 { color: var(--rojo); font-size: clamp(30px, 4.4vw, 44px); }
+  h3 { color: var(--cafe); font-size: 24px; }
+  .lead { font-size: 20px; margin: 0 0 28px; }
+  .btn { display: inline-block; background: var(--rojo); color: var(--blanco); font: 800 19px/1 var(--titular); padding: 16px 26px; border-radius: 999px; text-decoration: none; }
+  .btn:hover { background: #d90001; }
+  .btn.alt { background: var(--cafe); }
+
+  .sellos { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 26px; }
+  .sello { border: 2px solid var(--cafe); border-radius: 999px; padding: 6px 14px; font-weight: 700; font-size: 14px; background: var(--blanco); }
+
+  section { padding: 72px 0; }
+  .historia .wrap { display: grid; grid-template-columns: .7fr 1.3fr; gap: 48px; align-items: center; }
+  .historia blockquote { margin: 24px 0 0; font: 800 22px/1.3 var(--titular); color: var(--verde); }
+
+  .productos { background: var(--durazno); }
+  .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 28px; }
+  .card { background: var(--blanco); border-radius: 22px; padding: 26px; box-shadow: 4px 4px 0 rgba(103,61,32,.18); }
+  .card p { margin: 0; }
+
+  .app { background: var(--cafe); color: var(--blanco); }
+  .app h2 { color: var(--durazno); }
+  .app ul { padding-left: 20px; margin: 0 0 28px; }
+  .app li { margin-bottom: 8px; }
+  .pill { display: inline-block; background: var(--durazno); color: var(--cafe); font-weight: 700; font-size: 14px; border-radius: 999px; padding: 4px 12px; margin-bottom: 14px; }
+
+  footer { background: var(--crema); padding: 40px 0; font-size: 15px; }
+  footer .wrap { display: flex; flex-wrap: wrap; gap: 20px; justify-content: space-between; align-items: center; }
+  footer img { height: 38px; width: auto; }
+
+  @media (max-width: 760px) {
+    nav { display: none; }
+    .hero .wrap, .historia .wrap { grid-template-columns: 1fr; }
+    .historia .oso { max-width: 220px; margin: 0 auto; }
+    .cards { grid-template-columns: 1fr; }
+    section { padding: 56px 0; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a href="#inicio" aria-label="Little Bear Foods, inicio"><img src="img/logo.png" alt="Little Bear Foods" width="600" height="379"></a>
+    <nav aria-label="Principal">
+      <a href="#historia">Nuestra historia</a>
+      <a href="#productos">Productos</a>
+      <a href="#app">App</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<main id="inicio">
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <h1>Nutriendo a pequeñines con comida y amor de verdad</h1>
+        <p class="lead">Hecho por padres, con ingredientes reales y amor de verdad.</p>
+        <a class="btn" href="https://www.instagram.com/littlebear_foods/">Conocenos en Instagram</a>
+        <div class="sellos" aria-label="Distintivos">
+          <span class="sello">Hecho en Costa Rica</span>
+          <span class="sello">Desde los 6 meses</span>
+          <span class="sello">Sin azúcar añadida</span>
+        </div>
+      </div>
+      <img src="img/personajes.png" alt="Ayote, remolacha, banano, fresa, manzana y piña sonriendo" width="700" height="649">
+    </div>
+  </section>
+
+  <section class="historia" id="historia">
+    <div class="wrap">
+      <img class="oso" src="img/oso.png" alt="El oso de Little Bear Foods con su delantal rojo" width="500" height="678">
+      <div>
+        <h2>Nuestra historia</h2>
+        <p>Little Bear Foods nació del deseo de unos padres de familia de alimentar a su bebé con los mejores ingredientes. Lo que comenzó en una cocina, con amor, se convirtió en una misión para transformar la industria de la alimentación infantil.</p>
+        <blockquote>Nutrir a los pequeñines con ingredientes reales y hacer las cosas con valores de verdad.</blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section class="productos" id="productos">
+    <div class="wrap">
+      <h2>Lo que hacemos</h2>
+      <p>Alimentos para bebés pensados desde la cocina de una familia: ingredientes reales, recetas simples y mucho cuidado en cada detalle.</p>
+      <div class="cards">
+        <div class="card">
+          <h3>Colados LBF</h3>
+          <p>Purés para bebés en pouch, listos para llevar.</p>
+        </div>
+        <div class="card">
+          <h3>Ingredientes reales</h3>
+          <p>Frutas, verduras y granos que reconocés en la etiqueta.</p>
+        </div>
+        <div class="card">
+          <h3>Dónde comprar</h3>
+          <p>Escribinos por Instagram y te decimos el punto de venta más cercano.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="app" id="app">
+    <div class="wrap">
+      <span class="pill">Próximamente</span>
+      <h2>LBF Nutri, la app de alimentación complementaria</h2>
+      <ul>
+        <li>Qué darle hoy a tu bebé según su edad.</li>
+        <li>Recetas fáciles y rápidas, probadas en casa.</li>
+        <li>Un evaluador para saber si un producto empacado es adecuado para su edad.</li>
+        <li>Contenido revisado por una nutricionista licenciada.</li>
+      </ul>
+      <a class="btn" href="https://www.instagram.com/littlebear_foods/">Avisame cuando salga</a>
+    </div>
+  </section>
+</main>
+
+<footer id="contacto">
+  <div class="wrap">
+    <img src="img/logo.png" alt="Little Bear Foods" width="600" height="379">
+    <div>
+      <strong>Contacto</strong><br>
+      Instagram: <a href="https://www.instagram.com/littlebear_foods/">@littlebear_foods</a>
+    </div>
+    <div>© 2026 Little Bear Foods · Costa Rica</div>
+  </div>
+</footer>
+
+</body>
+</html>
